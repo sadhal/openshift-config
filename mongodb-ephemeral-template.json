@@ -60,7 +60,7 @@
               ],
               "from": {
                 "kind": "ImageStreamTag",
-                "name": "mongodb:3.2",
+                "name": "mongodb-32-centos7",
                 "namespace": "${NAMESPACE}"
               },
               "lastTriggeredImage": ""
