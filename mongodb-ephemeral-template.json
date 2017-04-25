@@ -60,7 +60,7 @@
               ],
               "from": {
                 "kind": "ImageStreamTag",
-                "name": "mongodb-32-centos7:latest",
+                "name": "mongodb:3.2",
                 "namespace": "${NAMESPACE}"
               },
               "lastTriggeredImage": ""
@@ -85,7 +85,7 @@
             "containers": [
               {
                 "name": "mongodb",
-                "image": "mongodb",
+                "image": "centos/mongodb-32-centos7",
                 "ports": [
                   {
                     "containerPort": 27017,
@@ -171,7 +171,7 @@
       "name": "NAMESPACE",
       "displayName": "Namespace",
       "description": "The OpenShift Namespace where the ImageStream resides.",
-      "value": "centos"
+      "value": "openshift"
     },
     {
       "name": "DATABASE_SERVICE_NAME",
